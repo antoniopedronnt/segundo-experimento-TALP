@@ -1,0 +1,18 @@
+{
+  "name": "sistema",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build": "npm run build:server && npm run build:client",
+    "test:acceptance": "npm --prefix acceptance run test",
+    "test": "npm run test:acceptance"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Sistema web para gerenciamento de alunos"
+}

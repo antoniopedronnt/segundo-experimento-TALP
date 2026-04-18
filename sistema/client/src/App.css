@@ -1,0 +1,101 @@
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+.student-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.student-form input {
+  border: 1px solid #c8ced8;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #1f6feb;
+  color: #fff;
+}
+
+button.secondary {
+  background: #59636e;
+}
+
+button.danger {
+  background: #cf222e;
+}
+
+.feedback {
+  margin: 0.5rem 0 1rem;
+}
+
+.feedback.error {
+  color: #cf222e;
+  font-weight: 600;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.student-list th,
+.student-list td {
+  border: 1px solid #d0d7de;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.student-list th {
+  background: #f6f8fa;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 860px) {
+  .student-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    justify-content: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
