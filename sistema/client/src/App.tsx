@@ -64,7 +64,7 @@ interface ClassDetail {
 const EMPTY_STUDENT_FORM: StudentForm = { name: '', cpf: '', email: '' }
 const EMPTY_CLASS_FORM: ClassForm = { topic: '', year: '', semester: '1', studentIds: [] }
 const CONCEPT_OPTIONS: Concept[] = ['MANA', 'MPA', 'MA']
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3000'
+const API_URL = import.meta.env.VITE_API_URL ?? 'https://segundo-experimento-talp.onrender.com'
 
 const readErrorMessage = async (response: Response, fallback: string): Promise<string> => {
   const body = (await response.json().catch(() => ({}))) as { message?: string }
